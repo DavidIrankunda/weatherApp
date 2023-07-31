@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type = "text/JavaScript" src = "https://MomentJS.com/downloads/moment.js"></script>
+    <script src="main.js" defer ></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="weather">
+            <div class="top-row">
+                <div class="weather-title">Weather</div>
+                
+                <form class="search">
+                    <input type="search" id="search-input" placeholder="Search...">
+                    <div class="search-icon"></div>
+                </form>
+            </div>
+
+            <div class="main-content">
+
+                
+                <div class="top-main">
+                            <div id="city-name"></div>
+                            <div id="city-time"></div> 
+                             <div id="temp-div"><span id="temp"></span>°C</div> 
+                             <div class="icon"><img id="weather-icon" src="" alt="weather-icon"></div>
+ 
+                            <div id="description"></div>
+
+                </div>
+
+
+                <div class="weather-details-container">
+                    <div class="weather-info">
+                        <div class="weather-info-title" ><img class="weather-icon"  src="./icons/wind.png" alt=""> <p>Wind Speed </p></div>
+                        <div class="weather-details" ><span id="wind-info"></span> km/s</div>
+                    </div>
+
+                    <div class="weather-info">
+                        <div class="weather-info-title" ><img class="weather-icon" src="./icons/humidity.png" alt=""> <p>Humidity</p></div>
+                        <div class="weather-details"><span id="humidity-info"></span>%</div>
+                    </div>
+
+                    <div class="weather-info">
+                        <div class="weather-info-title" ><img class="weather-icon" src="./icons/thermometer.png" alt=""> <p>Feels Like</p></div>
+                        <div class="weather-details"><span id="feelslike-info"></span>°C</div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div>Github <a href="https://github.com/DavidIrankunda">DavidIrankunda</a></div>
+    </footer>
+
+</body>
+</html>
